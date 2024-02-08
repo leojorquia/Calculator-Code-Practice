@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>This is my first practice of coding a calculator </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <table class="tbl_calculator">
+            <tr>
+                <td colspan="3"> <input class="display-screen" type="text" id="answer" disabled/></td>
+                <!--The code above is for the display box of the calcular or the screen where the it will display the data or the value input by the user-->
+                <td> <input type="button" value="C" onclick="clearScreen()" id="btn"/></td>
+                <!--The code above will be use to clear the value or the data display in the screen-->
+            </tr>
+            <tr id="num_btn"> <!--Dinhi mao ni ang mga button sa number ug operator-->
+                <td> <input type="button" value="1" onclick="display('1')"/> </td>
+                <td> <input type="button" value="2" onclick="display('2')"/> </td>
+                <td> <input type="button" value="3" onclick="display('3')"/> </td>
+                <td> <input type="button" value="/" onclick="display('/')"/> </td>
+            </tr>
+            <tr id="num_btn"> <!--Dinhi mao ni ang mga button sa number ug operator-->
+                <td> <input type="button" value="4" onclick="display('4')"/> </td>
+                <td> <input type="button" value="5" onclick="display('5')"/> </td>
+                <td> <input type="button" value="6" onclick="display('6')"/> </td>
+                <td> <input type="button" value="-" onclick="display('-')"/> </td>
+            </tr>
+            <tr id="num_btn"> <!--Dinhi mao ni ang mga button sa number ug operator-->
+                <td> <input type="button" value="7" onclick="display('7')"/> </td>
+                <td> <input type="button" value="8" onclick="display('8')"/> </td>
+                <td> <input type="button" value="9" onclick="display('9')"/> </td>
+                <td> <input type="button" value="+" onclick="display('+')"/> </td>
+            </tr>
+            <tr id="num_btn"> <!--Dinhi mao ni ang mga button sa number ug operator-->
+                <td> <input type="button" value="." onclick="display('.')"/> </td>
+                <td> <input type="button" value="0" onclick="display('0')"/> </td>
+                <!--Dinhia mao ni ang mo gamit na ug mathematical operations dinhia na e solve and problem-->
+                <td> <input type="button" value="=" onclick="calculate()" id="btn"/> </td>
+                <td> <input type="button" value="*" onclick="display('*')"/> </td>
+            </tr>
+        </table>
+     <script type="text/javascript" src="script.js"> </script> <!--Dinhia gi import and file nga naka save as js-->
+    </body>
+</html>
